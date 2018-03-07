@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JS Flashcards</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link type="text/css" rel="stylesheet" href="materialize.min.css"/>
+    <link type="text/css" rel="stylesheet" href="styles.css"/>
+    <script src="flashcard.js"></script>
+
+
+  </head>
+
+
+  <body>
+    <headder class="centered">
+      <h1 class="centered">ES6 Flash Cards</h1>
+    </headder>
+
+<!--
+    <div class="cards-container grid cards">
+      <div class="row">
+        <%= :flashcards.each do |flashcards| %>
+          <div class="col s12 m4 l3">
+              <div class="card blue">
+                <div class="card-content">
+                  <span class="card-front"><%= flashcard_front%></span>
+                  <span class="card-back"><%= flashcard_back%></span>
+
+              </div>
+          </div>
+        <%= end %>
+      </div>
+ -->
+
+<div class="cards-container grid cards">
+  <div class="row">
+      <div class="col s12 m4 l3">
+          <div class="card blue white-text">
+            <div class="card-content"  onclick="showHide()" class="front">
+              <p class="flashcard front">Arrow Function</p>
+              <p class="flashcard back"  id="newID" >Arrow Function back </p>
+            </div>
+          </div>
+          <div class="card blue white-text">
+            <div class="card-content" id=aCard onclick="myFunction()">
+              <p class="flashcard front">Instead of var newVar = value, what can else you use?</p>
+              <p class="flashcard back">instead...back</p>
+            </div>
+          </div>
+          <div class="card blue white-text">
+            <div class="card-content" ontouchstart="this.classList.toggle('hover')">
+              <p class="flashcard front">What's the difference between synchronous and asynchronous code?</p>
+              <p class="flashcard back">What's..back</p>
+            </div>
+          </div>
+      </div>
+  </div>
+
+
+
+
+
+  <!-- <script  type="text/javascript" src="flashcard.js"></script> -->
+
+  <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
+  </body>
+</html>

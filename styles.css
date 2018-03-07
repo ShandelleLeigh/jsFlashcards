@@ -1,0 +1,15 @@
+@import 'materialize';
+
+
+.centered {
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  align-self: center;
+}
+.front {
+  visibility: visible;
+}
+.back {
+  visibility: hidden;
+}
